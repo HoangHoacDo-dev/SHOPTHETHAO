@@ -1,0 +1,346 @@
+/* =========================================
+   CÁC KHỐI CHỈ DÀNH CHO TRANG CHỦ
+========================================= */
+.hero-banner-section {
+  width: 100%;
+  overflow: hidden;
+}
+.custom-indicators {
+  margin-bottom: 15px;
+}
+.custom-indicators [data-bs-target] {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50%;
+  background-color: #555 !important;
+  margin: 0 6px;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+.custom-indicators .active {
+  background-color: #ffffff !important;
+  opacity: 1;
+  transform: scale(1.1);
+}
+.carousel-item img {
+  object-fit: cover;
+  max-height: 700px;
+}
+
+.new-arrivals-wrapper {
+  background: linear-gradient(to right, #ff3b3b, #ffb703);
+  border-radius: 15px;
+  padding: 45px 20px 20px 20px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.new-arrivals-title-img {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  height: 50px;
+  width: auto;
+  max-width: 90%;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+.new-arrivals-inner {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+}
+/* Tùy chỉnh thanh trượt của Slick Carousel cho giống bản thiết kế */
+.new-arrivals-slider .slick-dots {
+  display: flex !important;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  gap: 8px;
+}
+.new-arrivals-slider .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 35px;
+  height: 6px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background-color: #d6d6d6;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.new-arrivals-slider .slick-dots li.slick-active button {
+  background-color: #f03a3a;
+}
+
+.card-custom {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  overflow: visible;
+  height: 100%;
+  transition: 0.3s;
+}
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.card-img-wrapper {
+  position: relative;
+  padding: 10px;
+}
+/* Ép tỷ lệ đồng nhất trên mọi màn hình */
+.card-img-custom {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5; /* Ép tỷ lệ: Chiều rộng 4 phần thì Chiều cao 5 phần */
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+}
+.sale-badge {
+  position: absolute;
+  bottom: -15px;
+  left: -5px;
+  width: 85px;
+  z-index: 2;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+.card-body-custom {
+  padding: 10px 10px 12px !important;
+  text-align: left;
+}
+.card-title-custom {
+  font-size: 13px;
+  color: #333;
+  font-weight: 600;
+  margin: 8px 0 2px 0 !important;
+  line-height: 1.3 !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 34px !important;
+}
+.price-current {
+  color: #dc3545;
+  font-weight: 800;
+  font-size: 15px;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+}
+.price-old {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 12px;
+  margin: 2px 0 10px 0 !important;
+  line-height: 1.2 !important;
+}
+
+.btn-stock {
+  background: linear-gradient(to bottom, #f03a3a, #c82333);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 0;
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 3px 5px rgba(200, 0, 0, 0.2);
+  transition: 0.2s;
+}
+.btn-stock:hover {
+  background: #bd2130;
+  color: white;
+}
+.btn-detail {
+  background-color: #a82e2e;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  padding: 3px 18px;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 8px;
+  display: inline-block;
+  transition: 0.2s;
+}
+.btn-detail:hover {
+  background-color: #801e1e;
+  color: #ffffff;
+}
+
+.slider-bars {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.slider-bar {
+  width: 35px;
+  height: 6px;
+  background-color: #d6d6d6;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.slider-bar.active {
+  background-color: #f03a3a;
+}
+.slider-bar-single {
+  width: 120px;
+  height: 6px;
+  background-color: #ef4444;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.feature-box {
+  background-image: url("../images/image(HoacDo)/biaxanh.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  padding: 12px 15px;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.feature-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+.feature-icon i {
+  font-size: 36px;
+  color: #ffffff;
+}
+.feature-text {
+  color: #ffffff;
+}
+.feature-title {
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  margin-bottom: 2px;
+}
+.feature-desc {
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.category-banner-link {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.category-banner-link:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.category-banner-img {
+  object-fit: cover;
+  height: 150px;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+.category-banner-link:hover .category-banner-img {
+  transform: scale(1.08);
+}
+
+.category-section-wrapper {
+  background-color: #f6f7f9;
+  border-radius: 12px;
+  padding: 25px;
+  border-left: 10px solid #e53935;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.btn-slider-nav {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  padding: 0;
+  transition: 0.2s;
+}
+.btn-slider-nav:hover {
+  background-color: #b91c1c;
+  color: white;
+}
+.slider-progress-bar {
+  height: 4px;
+  background-color: #e5e7eb;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.slider-progress-active {
+  height: 100%;
+  background-color: #ef4444;
+  border-radius: 2px;
+}
+
+.news-item-small {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.news-item-small:hover h6 {
+  color: #e12729;
+}
+.news-item-small img {
+  transition: 0.3s;
+}
+.news-item-small:hover img {
+  transform: scale(1.05);
+}
+.featured-news h5:hover,
+.side-news h6:hover {
+  color: #e12729;
+  cursor: pointer;
+}
+
+.brand-item {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 15px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  transition: 0.3s;
+}
+.brand-item:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+/* --- TỐI ƯU CÁC CARD DANH MỤC TRÊN ĐIỆN THOẠI --- */
+@media (max-width: 768px) {
+  /* Chuyển Nút và Giá từ xếp ngang thành xếp dọc */
+  .card-body-custom .d-flex.justify-content-between {
+    flex-direction: column-reverse; /* Đưa cụm giá lên trên, Nút xuống dưới */
+    align-items: stretch !important;
+    gap: 8px; /* Tạo khoảng cách giữa giá và nút */
+  }
+
+  /* Ép cụm giá căn lề trái cho dễ nhìn */
+  .card-body-custom .text-end {
+    text-align: left !important;
+  }
+
+  /* Kéo dài nút Xem chi tiết ra 100% để dễ bấm trên điện thoại */
+  .btn-detail {
+    width: 100%;
+    text-align: center;
+    padding: 7px 0;
+    margin-top: 0 !important;
+    font-size: 12px;
+  }
+}
