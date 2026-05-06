@@ -21,9 +21,15 @@ body {
    2. HEADER & NAVIGATION (ĐÃ ĐỒNG BỘ 100%)
 ========================================= */
 .header-top {
+  /* Các code cũ của bạn giữ nguyên */
   background-color: #b71a21;
   padding: 15px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* BỔ SUNG 3 DÒNG NÀY ĐỂ CỐ ĐỊNH HEADER */
+  position: sticky;
+  top: 0;
+  z-index: 1020;
 }
 
 .search-wrapper {
@@ -108,6 +114,14 @@ body {
 /* =========================================
    HIỆU ỨNG MENU THẢ XUỐNG (DROPDOWN)
 ========================================= */
+/* Ép sát mũi tên vào chữ trong Menu Dropdown */
+.dropdown.d-flex > .nav-link-custom:first-child {
+  padding-right: 0 !important; /* Xóa khoảng trống bên phải của chữ */
+}
+
+.dropdown.d-flex > .nav-link-custom[data-bs-toggle="dropdown"] {
+  padding-left: 3px !important; /* Kéo mũi tên sát rịt vào chữ, chỉ cách đúng 3px */
+}
 .dropdown-menu {
   border: none;
   border-top: 3px solid #ffd700; /* Viền vàng phía trên cho sang trọng */
@@ -183,7 +197,97 @@ body {
     margin-top: 15px;
   }
 }
+.sticky-contact {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
+.contact-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Nút Zalo màu xanh nước biển */
+.contact-item.zalo {
+  background: #0088ff;
+}
+
+/* Nút Điện thoại màu đỏ */
+.contact-item.phone {
+  background: #dc3545;
+}
+
+.contact-item img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.contact-item i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* Hiệu ứng phóng to nhẹ khi di chuột vào */
+.contact-item:hover {
+  transform: scale(1.05);
+  color: white;
+  opacity: 0.9;
+}
+/* Định nghĩa hiệu ứng chuyển động màu */
+@keyframes rainbowText {
+  0% {
+    color: #ffffff;
+  } /* Trắng */
+  33% {
+    color: #ffeb3b;
+  } /* Vàng lấp lánh */
+  66% {
+    color: #00ff00;
+  } /* Xanh lá neon */
+  100% {
+    color: #ffffff;
+  } /* Quay lại trắng */
+}
+
+.color-change {
+  animation: rainbowText 3s infinite linear;
+  font-weight: 800;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.scroll-top-btn:hover {
+  background-color: #a71d2a;
+  transform: scale(1.1);
+}
 /* =========================================
    3. FOOTER CHUNG
 ========================================= */

@@ -252,24 +252,3 @@
   opacity: 1;
   visibility: visible;
 }
-
-.scroll-top-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 45px;
-  height: 45px;
-  background-color: #dc3545;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 1000;
-  display: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-.scroll-top-btn:hover {
-  background-color: #a71d2a;
-  transform: scale(1.1);
-}
